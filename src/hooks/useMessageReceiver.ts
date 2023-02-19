@@ -2,7 +2,7 @@ import {useCallback, useEffect, useState} from 'react';
 import getClient from '../client/supabase';
 import {RealtimePostgresInsertPayload} from '@supabase/supabase-js';
 
-export const useMessage = () => {
+export const useMessageReceiver = () => {
     const [message, setMessage] = useState('Nun Test Wedding');
     const [isLoading, setIsLoading] = useState(true);
 

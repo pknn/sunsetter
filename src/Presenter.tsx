@@ -1,11 +1,10 @@
-import './components/SunsetContainer/sunset-container.css';
 import SunsetContainer from './components/SunsetContainer';
 import MessagePresenter from './components/MessagePresenter';
 
-const App = () => (
+const Presenter = () => (
     <SunsetContainer>
         <MessagePresenter/>
     </SunsetContainer>
 );
 
-export default App;
+export default Presenter;

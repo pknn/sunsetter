@@ -1,7 +1,7 @@
-import {useMessage} from '../../hooks/useMessage';
+import {useMessageReceiver} from '../../hooks/useMessageReceiver';
 
 const MessagePresenter = () => {
-    const {message} = useMessage();
+    const {message} = useMessageReceiver();
 
     return (
         <>
