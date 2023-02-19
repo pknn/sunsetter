@@ -8,7 +8,7 @@ export const routesObjects: RouteObject[] = [
         element: <Presenter/>,
     },
     {
-        path: 'send-love',
+        path: '/send-love',
         element: <Publisher/>,
     },
 ];
