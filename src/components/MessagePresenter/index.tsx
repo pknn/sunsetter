@@ -4,11 +4,9 @@ const MessagePresenter = () => {
     const {message} = useMessageReceiver();
 
     return (
-        <>
-            <p className="w-4/5 text-white text-center text-lg md:text-5xl absolute inset-0 top-1/2 m-auto">
-                {message}
-            </p>
-        </>
+        <p className="w-4/5 text-white text-center text-lg md:text-5xl relative mx-auto top-1/2 inset-0">
+            {message}
+        </p>
     );
 };
 
