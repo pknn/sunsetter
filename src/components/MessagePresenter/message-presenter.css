@@ -1,17 +1,7 @@
-.my-node-enter {
-    opacity: 0;
+div.text-transition > div {
+    width: 100% !important;
 }
 
-.my-node-enter-active {
-    opacity: 1;
-    transition: opacity 200ms;
-}
-
-.my-node-exit {
-    opacity: 1;
-}
-
-.my-node-exit-active {
-    opacity: 0;
-    transition: opacity 200ms;
+div.text-transition {
+    transform: translateY(-50px);
 }
