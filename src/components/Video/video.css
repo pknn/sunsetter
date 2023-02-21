@@ -1,6 +1,6 @@
 .sunset-bg {
-    background-image: url("../../assets/sunset-sq.gif");
-    background-size: cover;
+    background-image: url("../../assets/bg-loop.gif");
+    background-size: auto 1000px;
     background-position: center;
     width: 100%;
     min-height: 500px;
