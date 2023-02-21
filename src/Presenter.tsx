@@ -1,9 +1,11 @@
 import SunsetContainer from './components/SunsetContainer';
-import MessagePresenter from './components/MessagePresenter';
+import Header from './components/Header';
+import Video from './components/Video';
 
 const Presenter = () => (
     <SunsetContainer>
-        <MessagePresenter/>
+        <Header/>
+        <Video/>
     </SunsetContainer>
 );
 

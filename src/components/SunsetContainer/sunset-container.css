@@ -1,3 +1,5 @@
-.sunset-bg {
-    background-image: url("../../assets/sunset-sq.gif");
+.sunset-card-container {
+    height: 876px;
+    width: 566px;
+    background-color: #F0E5DB;
 }
