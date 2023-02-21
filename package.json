@@ -11,6 +11,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.8.0",
     "react": "^18.2.0",
+    "react-css-transition-replace": "^4.0.5",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-text-transition": "^3.0.2",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
+    "@types/react-css-transition-replace": "^2.1.4",
     "@types/react-dom": "^18.0.10",
     "@types/react-transition-group": "^4.4.5",
     "@vitejs/plugin-react-swc": "^3.0.0",
