@@ -3,14 +3,21 @@ import ReactTextTransition from "react-text-transition";
 import './message-presenter.css';
 
 const MessagePresenter = () => {
-    const {message} = useMessageReceiver();
+    const {message, writer} = useMessageReceiver();
 
     return (
-        <ReactTextTransition
-            className="w-4/5 text-white text-center text-lg md:text-5xl relative mx-auto top-1/2 inset-0"
-        >
-            {message}
-        </ReactTextTransition>
+        <div className="relative h-full">
+            <ReactTextTransition
+                className="w-full text-white text-center text-lg md:text-3xl text-center absolute inset-0 mx-auto"
+            >
+                <div>{message}</div>
+                <div className="flex justify-center mt-4">
+                    <div className="w-10 border-b border-b-1 border-b-black -translate-y-3 mr-4"></div>
+                    <div className="text-base">{writer}</div>
+                    <div className="w-10 border-b border-b-1 border-b-black -translate-y-3 ml-4"></div>
+                </div>
+            </ReactTextTransition>
+        </div>
     );
 };
 

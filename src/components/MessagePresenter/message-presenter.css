@@ -1,7 +1,7 @@
 div.text-transition > div {
     width: 100% !important;
-}
-
-div.text-transition {
-    transform: translateY(-50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #4B4549;
 }
