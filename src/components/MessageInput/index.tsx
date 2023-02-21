@@ -30,7 +30,9 @@ const MessageInput = ({isNameEmpty, message, onMessageChange, onBackButtonClick,
     };
 
     const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
-        onDoneButtonClick();
+        if (event.key === 'Enter') {
+            onDoneButtonClick();
+        }
     };
 
     return (

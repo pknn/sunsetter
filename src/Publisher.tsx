@@ -1,15 +1,20 @@
 import NameInput from './components/NameInput';
 import {useMemo, useState} from 'react';
 import MessageInput from './components/MessageInput';
+import {useMessagePublisher} from './hooks/useMessagePublisher';
+import {useNavigate} from "react-router-dom";
 
 type Screen = 'name' | 'blessing';
 
 const Publisher = () => {
-    const [screen, setScreen] = useState<Screen>('blessing');
+    const [screen, setScreen] = useState<Screen>('name');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
-
     const isNameEmpty = useMemo(() => name.replaceAll(' ', '').length <= 0, [name]);
+
+    const navigate = useNavigate();
+
+    const sendMessage = useMessagePublisher();
 
     const handleNameChange = (name: string) => {
         setName(name);
@@ -28,8 +33,11 @@ const Publisher = () => {
         setScreen('name');
     };
 
-    const handleDoneButtonClick = () => {
+    const handleDoneButtonClick = async () => {
         if (message.replaceAll(' ', '').length === 0) return;
+
+        navigate('/thank-you');
+        // await sendMessage(message, name);
     };
 
     return (

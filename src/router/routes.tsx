@@ -1,6 +1,7 @@
 import {RouteObject} from "react-router-dom";
 import Presenter from '../Presenter';
 import Publisher from '../Publisher';
+import ThankYou from '../ThankYou';
 
 export const routesObjects: RouteObject[] = [
     {
@@ -11,4 +12,8 @@ export const routesObjects: RouteObject[] = [
         path: '/send-love',
         element: <Publisher/>,
     },
+    {
+        path: '/thank-you',
+        element: <ThankYou/>
+    }
 ];
