@@ -36,8 +36,8 @@ const Publisher = () => {
     const handleDoneButtonClick = async () => {
         if (message.replaceAll(' ', '').length === 0) return;
 
+        await sendMessage(message, name);
         navigate('/thank-you');
-        // await sendMessage(message, name);
     };
 
     return (

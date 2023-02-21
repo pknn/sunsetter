@@ -8,7 +8,7 @@ export const useMessageReceiver = () => {
 
     const handleNewMessage = useCallback((message: RealtimePostgresInsertPayload<any>) => {
         setMessage(message.new.content);
-        setWriter(`( message.new.writer )`);
+        setWriter(`( ${message.new.writer} )`);
     }, []);
 
     const initializeMessage = async () => {

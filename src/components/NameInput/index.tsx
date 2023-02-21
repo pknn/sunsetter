@@ -38,7 +38,7 @@ const NameInput = ({name, onNameChange, onNextButtonClick}: Props) => {
                 className="text-center w-full p-2 bg-transparent message-input border-b border-b-1 outline-none caret-white	text-white"
                 type="text"
                 enterKeyHint="next"
-                placeholder="ชื่ออะไรบอกกันหน่อย 😘"
+                placeholder="พิมพ์ชื่อที่นี่ 😘"
             />
             <button onClick={onNextButtonClick}
                     className={`${!showNextButton ? 'opacity-0' : 'opacity-100'} transition-all duration-300`}>
