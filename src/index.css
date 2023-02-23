@@ -9,6 +9,7 @@
 .publisher-box {
     background-image: url("./assets/background.png");
     background-size: cover;
+    background-position: center;
 }
 
 @supports (padding:max(0px)) {
