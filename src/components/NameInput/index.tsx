@@ -35,7 +35,7 @@ const NameInput = ({name, onNameChange, onNextButtonClick}: Props) => {
                 value={name}
                 onChange={handleNameChange}
                 onKeyDown={handleKeyDown}
-                className="text-center w-full p-2 bg-transparent message-input border-b border-b-1 outline-none caret-white	text-white"
+                className="text-center w-full p-2 bg-transparent message-input border-b border-b-1 outline-none caret-white	text-white rounded-none"
                 type="text"
                 enterKeyHint="next"
                 placeholder="พิมพ์ชื่อที่นี่ 😘"
